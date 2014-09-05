@@ -1,0 +1,12 @@
+{% extends "MusicPost/base.html" %}
+ 
+{% block content  %} 
+
+{% if user.is_authenticated %}
+<h2> You are now logged out </h2> 
+
+{% else %}
+    <h2> You were never logged in, have a nice day :) </h2>  
+{% endif %}
+
+{% endblock %}
